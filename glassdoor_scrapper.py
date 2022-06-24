@@ -31,7 +31,7 @@ def get_jobs(keyword, num_jobs, verbose, path, slp_time):
 
         #Test for the "Sign Up" prompt and get rid of it.
         try:
-            driver.find_element_by_class_name("selected").click()
+            driver.find_element_by_class_name("data-selected").click()
         except ElementClickInterceptedException:
             pass
 
